@@ -43,6 +43,7 @@ public:
     QAction *actionEnglish;
     QAction *actionJapanese;
     QAction *actionFrench;
+    QAction *actionUndo;
     QWidget *centralWidget;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
@@ -94,6 +95,8 @@ public:
         actionJapanese->setObjectName(QStringLiteral("actionJapanese"));
         actionFrench = new QAction(MainWindow);
         actionFrench->setObjectName(QStringLiteral("actionFrench"));
+        actionUndo = new QAction(MainWindow);
+        actionUndo->setObjectName(QStringLiteral("actionUndo"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
@@ -137,6 +140,7 @@ public:
         menuFile->addAction(actionClose);
         menuEdit->addAction(actionCopy);
         menuEdit->addAction(actionPaste);
+        menuEdit->addAction(actionUndo);
         menuHelp->addAction(actionDocument);
         menuHelp->addAction(actionTuturial);
         menuHelp->addSeparator();
@@ -173,6 +177,7 @@ public:
         actionEnglish->setText(QApplication::translate("MainWindow", "English", Q_NULLPTR));
         actionJapanese->setText(QApplication::translate("MainWindow", "Japanese", Q_NULLPTR));
         actionFrench->setText(QApplication::translate("MainWindow", "French", Q_NULLPTR));
+        actionUndo->setText(QApplication::translate("MainWindow", "Undo", Q_NULLPTR));
         pushButton->setText(QApplication::translate("MainWindow", "Apply", Q_NULLPTR));
         pushButton_2->setText(QApplication::translate("MainWindow", "Undo", Q_NULLPTR));
         pushButton_3->setText(QApplication::translate("MainWindow", "Close", Q_NULLPTR));

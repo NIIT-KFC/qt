@@ -80,6 +80,7 @@
     </property>
     <addaction name="actionCopy"/>
     <addaction name="actionPaste"/>
+    <addaction name="actionUndo"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -202,6 +203,11 @@
   <action name="actionFrench">
    <property name="text">
     <string>French</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
    </property>
   </action>
  </widget>
